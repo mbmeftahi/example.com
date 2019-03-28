@@ -4,36 +4,65 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>MBMeftahi</title>
-    </head>
-    <body>
-        <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
+      <link rel="shortcut icon"  href="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64">
+      <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+  </head>
+  <body>
+      <section>
+        <header>
+          <span class="logo">Contact Us!</span>
+          <a id="toggleMenu">Menu<a>
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+        </header>
+      </section>
+      <main>
+          
+        <p></p>
+      <div class="container">
+          <p>Please fill in the forms below and we will contact you.</p>
           <form action="https://formspree.io/mmeftahi@hotmail.com" method="POST">
-            <input type="hidden" name="_next" value="https://mbmeftahi.github.io/thanks.html">   
+            <input type="hidden" name="_next" value="https://mbmeftahi.github.io/thanks.html">
             <input type="text" name="_gotcha" style="Display:none">
-            <div>
-              <label for="name">Name</label>
-              <input id="name" type="text" name="name">
-            </div>
-            <div>
-              <label for="email">Email</label>
-              <input id="email" type="text" name="_replyto" >
-            </div>
-            <div>
-                <label for="message">Message</label>
-                <textarea id="message" type="text" name="message"> </textarea>            
-            </div>
-            <div>
-              <input type="hidden" name="_subject" value="new submission!" >
-            </div>
-            <div>
-              <input type="submit" value="send">
-            </div>
+            <input type="hidden" name="_subject" value="new submission!" > 
+            <label for="fname">First Name</label>
+            <input type="text" id="fname" name="firstname" placeholder="Your name..">
+        
+            <label for="lname">Last Name</label>
+            <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+        
+            <label for="country">Email</label>
+            <input id="email" type="text" name="_replyto" placeholder="Your Email.." >
+                    
+            <label for="subject">Subject</label>
+            <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+        
+            <input type="submit" value="Submit">
+        
           </form>
+        </div>
+
+        
+    </main>
+<script>
+    var toggleMenu = document.getElementById('toggleMenu');
+    var nav = document.querySelector('nav');
+    toggleMenu.addEventListener(
+      'click',
+      function(){
+        if(nav.style.display=='block'){
+          nav.style.display='none';
+        }else{
+          nav.style.display='block';
+        }
+      }
+    );
+</script>
+
     </body>
 </html>

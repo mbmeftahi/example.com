@@ -6,18 +6,24 @@
       <title>MBMeftahi</title>
       <meta name="description" content="resume page">
       <meta name="keywords" content="resume,system engineer,full stack">
-    </head>
-    <body>
+      <link rel="shortcut icon"  href="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64">
+      <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+  </head>
+  <body>
+      <section>
+        <header>
+          <span class="logo">My Background</span>
+          <a id="toggleMenu">Menu<a>
+            <nav>
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="resume.html">Resume</a></li>
+                <li><a href="contact.html">Contact</a></li>
+              </ul>
+            </nav>
+        </header>
+      </section>
       <main>
-        <section>
-        <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
-          </nav>
-        </section>
         <h4>Mohammad Meftahi</h4>
         <h4> ● Glen Ellyn IllinoisStreet Address  ● 630-956-6133 ● mmeftahi@hotmail.com</h4>
         <h2>Full Stack Web and Hybrid Mobile Applications Developer</h2>
@@ -81,9 +87,20 @@
           MicroTrain Technologies – Chicago, IL  2019<br>
           Agile Full Stack Web and Hybrid Mobile Application Development<br>
         </div>  
-          
-
-
-      </main>
+    </main>
+<script>
+    var toggleMenu = document.getElementById('toggleMenu');
+    var nav = document.querySelector('nav');
+    toggleMenu.addEventListener(
+      'click',
+      function(){
+        if(nav.style.display=='block'){
+          nav.style.display='none';
+        }else{
+          nav.style.display='block';
+        }
+      }
+    );
+</script>
     </body>
 </html>

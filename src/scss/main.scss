@@ -1,0 +1,55 @@
+/* variables */
+
+$primary-font-stack: "Helvetica Neue",Helvetica,Arial,sans-serif;
+$primary-color: #333;
+
+/* universal settings */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font: 100% $primary-font-stack;
+  color: $primary-color;
+
+  margin: 0 auto;
+  padding: 0;
+  width: 1170px;
+}
+
+/* mixins */
+/* clear floats */
+@mixin clearfix() {
+    &:after {
+      content: "";
+      display: table;
+      clear: both;
+    }
+  }
+
+/* variables */
+$success-color: #3c763d;
+$warning-color: #8a6d3b;
+$error-color: #a94442;
+
+/* Utility Classes */
+
+.clearfix {
+  @include clearfix();
+}
+
+/** Rows and Columns */
+.row {
+  @include clearfix();
+}
+
+.col {
+  float: left;
+  width: 25%;
+  padding: .5rem;
+
+  /* debug */
+  border: 1px solid #990000;
+  background: #fff;
+}
