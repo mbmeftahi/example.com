@@ -1,157 +1,79 @@
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
+* {
+  font-family: 'Open Sans', sans-serif; }
 
-@import url('https://fonts.googleapis.com/css?family=Open+Sans');
-*{
-    font-family: 'Open-Sans', sans-serif;
-}
+.avatar {
+  border-radius: 50%;
+  float: right;
+  margin-right: 1em; }
 
-.avitar{
-    border-radius: 50%;
-    float: right;
-    margin-right: 1em;
-}
+body {
+  padding: 0;
+  margin: 0; }
 
-body{
-    padding: 0;
-    margin: 0;
-}
-header{
-    height: 50px;
-    background:  #000;
-    color: #ffffff;
-    padding: 0 .5rem 0 1rem;
-}
-header .logo{
-    line-height: 50px;
-    font-weight: bold;
-}
-nav{
-    float: right;
-}
-nav ul{
-    margin: 0;
-    padding: 0;
-    list-style: none;
-}
-nav ul li{
-    display: inline;
-}
+header {
+  height: 50px;
+  background: #000;
+  color: #fff;
+  padding: 0 .5rem 0 1rem; }
+
+header .logo {
+  line-height: 50px;
+  font-weight: bold; }
+
+nav {
+  float: right; }
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
+
+nav ul li {
+  display: inline; }
+
 nav ul li a,
 nav ul li a:link,
-nav ul li a:visited{
+nav ul li a:visited {
   display: inline-block;
-  padding: 0 .5rem;
   color: #fff;
   line-height: 50px;
   text-decoration: none;
-}
+  padding: 0 .5rem; }
 
-nav ul li a:hover{
-  background: #444;
-}
+nav ul li a:hover {
+  background: #444; }
 
 main {
-    /* Use a margin to center the page */
-    margin: 0 auto;
-  
-    /* Set the width of the content */
-    width: 960px;
-  
-    /* For smaller screens to not exceed the max screen width */
-    max-width: 100%;
-  }
+  /* Use a margin to center the page */
+  margin: 0 auto;
+  /* Set the width of the content */
+  width: 960px;
+  /* For smaller screens to not exceed the max screen width */
+  max-width: 100%; }
 
-@media only screen and (max-width: 960px)  {
-    main {
-        max-width: 90%;
-    }
-}
+#toggleMenu {
+  display: none; }
 
-@media only screen and (max-width: 960px)  {
-
-    #toggleMenu {
-      display: block;
-      float: right;
-      line-height: 50px;
-    }
-    header {
-        position: relative;
-    }  
-    nav {
-        position: absolute;
-        display: none;
-        background: #000;
-        top: 50px;
-        left: 80%;
-        right: 0;
-        opacity: 0.5;
-    }
-  
-    nav ul li a,
-    nav ul li a:link,
-    nav ul li a:visited{
-      display: block;
-      border-bottom: 1px solid #777;
-    }
-    
-}
-
-div *.txtdiv{
-    display: inline-block;
-}
-
-div *.displytxt{
+@media only screen and (max-width: 960px) {
+  nav {
+    display: none; }
+  #toggleMenu {
     display: block;
-}
-
-
-
-div *.boxdiv{
-    display: inline-block;
-}
-div *.displybox{
-    margin-left:  200px;
-    height: 20px;
-    width: 100px;
+    float: right;
+    line-height: 50px; }
+  nav {
+    position: absolute;
+    display: none;
+    background: #000;
+    top: 50px;
+    left: 0;
+    right: 0;
+    opacity: 0.5; }
+  nav ul li a,
+  nav ul li a:link,
+  nav ul li a:visited {
     display: block;
-}
+    border-bottom: 1px solid #777; } }
 
-#message{
-    height: 50px;
-    width: 200;
-}
-
-
-/* Style inputs with type="text", select elements and textareas */
-input[type=text], select, textarea {
-    width: 100%; /* Full width */
-    padding: 12px; /* Some padding */  
-    border: 1px solid #ccc; /* Gray border */
-    border-radius: 4px; /* Rounded borders */
-    box-sizing: border-box; /* Make sure that padding and width stays in place */
-    margin-top: 6px; /* Add a top margin */
-    margin-bottom: 16px; /* Bottom margin */
-    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
-  }
-  
-  /* Style the submit button with a specific background color etc */
-  input[type=submit] {
-    background-color: #4CAF50;
-    color: white;
-    padding: 12px 20px;
-    border: none;
-    border-radius: 4px;
-    cursor: pointer;
-  }
-  
-  /* When moving the mouse over the submit button, add a darker green color */
-  input[type=submit]:hover {
-    background-color: #45a049;
-  }
-  
-  /* Add a background color and some padding around the form */
-  .container {
-    border-radius: 5px;
-    background-color: #f2f2f2;
-    padding: 20px;
-  }
-  
+/*# sourceMappingURL=main.css.map */

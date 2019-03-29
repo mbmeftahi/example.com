@@ -1,55 +1,82 @@
-/* variables */
-
-$primary-font-stack: "Helvetica Neue",Helvetica,Arial,sans-serif;
-$primary-color: #333;
-
-/* universal settings */
-
+@import url("https://fonts.googleapis.com/css?family=Open+Sans");
 * {
-  box-sizing: border-box;
-}
+  font-family: 'Open Sans', sans-serif; }
+
+.avatar {
+  border-radius: 50%;
+  float: right;
+  margin-right: 1em; }
 
 body {
-  font: 100% $primary-font-stack;
-  color: $primary-color;
-
-  margin: 0 auto;
   padding: 0;
-  width: 1170px;
-}
+  margin: 0; }
 
-/* mixins */
-/* clear floats */
-@mixin clearfix() {
-    &:after {
-      content: "";
-      display: table;
-      clear: both;
-    }
-  }
+header {
+  height: 50px;
+  background: #000;
+  color: #fff;
+  padding: 0 .5rem 0 1rem; }
 
-/* variables */
-$success-color: #3c763d;
-$warning-color: #8a6d3b;
-$error-color: #a94442;
+header .logo {
+  line-height: 50px;
+  font-weight: bold; }
 
-/* Utility Classes */
+nav {
+  float: right; }
 
-.clearfix {
-  @include clearfix();
-}
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none; }
 
-/** Rows and Columns */
-.row {
-  @include clearfix();
-}
+nav ul li {
+  display: inline; }
 
-.col {
-  float: left;
-  width: 25%;
-  padding: .5rem;
+nav ul li a,
+nav ul li a:link,
+nav ul li a:visited {
+  display: inline-block;
+  color: #fff;
+  line-height: 50px;
+  text-decoration: none;
+  padding: 0 .5rem; }
 
-  /* debug */
-  border: 1px solid #990000;
-  background: #fff;
-}
+nav ul li a:hover {
+  background: #444; }
+
+main {
+  /* Use a margin to center the page */
+  margin: 0 auto;
+  /* Set the width of the content */
+  width: 960px;
+  /* For smaller screens to not exceed the max screen width */
+  max-width: 100%; }
+
+#toggleMenu {
+  display: none; }
+
+@media only screen and (max-width: 960px) {
+  nav {
+    display: none; }
+
+  #toggleMenu {
+    display: block;
+    float: right;
+    line-height: 50px; }
+
+  nav {
+    position: absolute;
+    display: none;
+    background: #000;
+    top: 50px;
+    left: 0;
+    right: 0;
+    opacity: 0.5; }
+
+  nav ul li a,
+  nav ul li a:link,
+  nav ul li a:visited {
+    display: block;
+    border-bottom: 1px solid #777; } }
+
+/*# sourceMappingURL=main.css.map */
