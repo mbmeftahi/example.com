@@ -22,7 +22,8 @@ header .logo {
   font-weight: bold; }
 
 nav {
-  float: right; }
+/**/
+   }
 
 nav ul {
   margin: 0;
@@ -77,3 +78,36 @@ main {
     border-bottom: 1px solid #777; } }
 
 /*# sourceMappingURL=main.css.map */
+/* Larger displays - 2 row/3 columns */
+@media only screen and (min-width: 768px) {
+  .gridcore {
+    display: grid;
+    /* larger devices will only be 3 columns wide */
+    grid-template-columns: repeat(3, 1fr); }
+  .gridcore .col-1 {
+    grid-column: 1;
+    grid-row: 1; }
+  .gridcore .col-2 {
+    grid-column: 2;
+    grid-row: 1; }
+  .gridcore .col-3 {
+    grid-column: 3;
+    grid-row: 1; } }
+
+/* Small devices - 2 rows/2 columns then 1 column */
+.gridcore {
+  display: grid;
+  /* smaller devices will only be 2 columns wide */ }
+
+.gridcore .col-1 {
+  grid-column: 1;
+  grid-row: 2; }
+
+.gridcore .col-2 {
+  /* Make the second column it's own full row */
+  grid-column: span 2;
+  grid-row: 2; }
+
+.gridcore .col-3 {
+  grid-column: 2;
+  grid-row: 2; }

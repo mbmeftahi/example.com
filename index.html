@@ -1,36 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
-       <meta charset="UTF-8">
-       <meta name="viewport" content="width=device-width, initial-scale=1.0">
-       <title>Hi, I am MBMeftahi</title>
-       <meta name="description" content="home page">
-       <meta name="keywords" content="system engineer,full stack development">
-       <!--
-        <meta name="msapplication-config" content="browserconfig.xml" />
-        <link rel="author" href="humans.txt" />
-        -->
-       <link rel="shortcut icon"  href="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64">
-       <link rel="stylesheet" type="text/css" href="./dist/css/main.css">
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Hi, I am MBMeftahi</title>
+      <meta name="description" content="home page">
+      <meta name="keywords" content="system engineer,full stack developer">
+      <!--
+      <meta name="msapplication-config" content="browserconfig.xml" />
+      <link rel="author" href="humans.txt" />
+      -->
+      <link rel="shortcut icon"  href="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64">
+      <!-- <link rel="stylesheet" type="text/css" href="./dist/css/main.css"> -->
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
     </head>
     <body>
-      <header>
-        <span class="logo">My Website</span>
-        <a id="toggleMenu">Menu<a>
-          <nav>
-            <ul>
-              <li><a href="index.html">Home</a></li>
-              <li><a href="resume.html">Resume</a></li>
-              <li><a href="contact.html">Contact</a></li>
-            </ul>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#">LOGO</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="resume.html">Resume</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact.php">ContactUS</a>
+                </li>
+              </ul>
+              <form class="form-inline my-2 my-lg-0">
+                <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
+              </form>
+            </div>
           </nav>
-      </header>
-      <main>
-          <h1>Hello, My name is Mohammad Meftahi</h1>
-          <img  class="avitar" src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="MBMeftahi">
-          <p> I am system engineer; curently attending full stack training at Microtrain  to extend my coding capability. I would like to be able to develop websites and api's and also created utilities and tools to automate back end activities of system admins.</p>
-        </main>
 
+    <main>
+      <h1>Hello, My name is Mohammad Meftahi</h1>
+      <img  class="avitar" src="https://www.gravatar.com/avatar/4678a33bf44c38e54a58745033b4d5c6?d=mm&s=64" alt="MBMeftahi">
+      <p> I am system engineer; curently attending full stack training at Microtrain  to extend my coding capability. I would like to be able to develop websites and api's  and websites to comunicate with user community and created utilities and tools to automate back end activities of system admins.</p>
+    </main>
+    <section>
+      <a href="https://localhost/apod-vanilla/index.html" >Vanilla NASA </a>
+      <iframe src="https://localhost/apod-vanilla/index.html" width="1080" height="660"></iframe>
+    </section>
+
+<!-- -->
 <script>
     var toggleMenu = document.getElementById('toggleMenu');
     var nav = document.querySelector('nav');
@@ -44,7 +64,9 @@
         }
       }
     );
-</script>
-        
+</script> 
+      <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+      <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>        
     </body>
 </html>

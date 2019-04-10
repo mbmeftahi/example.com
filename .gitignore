@@ -2,3 +2,4 @@ node_modules
 .gulp-scss-cache
 .sass-cache
 robots.txt
+package-lock.json
