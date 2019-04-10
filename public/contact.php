@@ -1,6 +1,6 @@
 <?php
 //Include non-vendor files
-require './core/About/src/Validation/Validate.php';
+require '../core/About/src/Validation/Validate.php';
 
 //Declare Namespaces
 use About\Validation;
