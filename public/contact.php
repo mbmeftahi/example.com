@@ -46,4 +46,4 @@ $content = <<<EOT
 </main> 
 EOT;
 require '../core/layout.php';
-?>
+
