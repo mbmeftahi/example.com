@@ -4,7 +4,7 @@ $meta=[];
 $meta['title'] = "Resume ";
 
 $content =<<<EOT
-        <h3>  redirection page after submiting the form in the contact page</h3>
+        <h3>  Thank you for contacting us; we will contact you shortly.</h3>
 EOT;
 require '../core/layout.php';
 ?>
