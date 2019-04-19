@@ -1,4 +1,7 @@
 <?php
+require '../core/bootstrap.php';
+
+
 // form processing requirement
 require '../core/processContactForm.php';
 $meta=[];
@@ -9,37 +12,37 @@ $meta['keywords'] = false;
 $content = <<<EOT
 <main>
 <h1>Contact Me - YOUR-NAME</h1>
-
+{$message}
 <form action="contact.php" method="POST">
 
 <input type="hidden" name="subject" value="New submission!">
 
-<div>
+<div class="form-group">
   <label for="firstName">Fisrt Name</label>
-  <input id="firstName" type="text" name="firstName" value="{$valid->userInput('firstName')}">
-  <div class="text-error">{$valid->error('firstName')}</div>
+  <input class="form-control" id="firstName" type="text" name="firstName" value="{$valid->userInput('firstName')}">
+  <div class="text-danger">{$valid->error('firstName')}</div>
 </div>
 
-<div>
+<div class="form-group">
   <label for="name">Last Name</label>
-  <input id="lastName" type="text" name="lastName" value="{$valid->userInput('lastName')}">
-  <div class="text-error">{$valid->error('lastName')}</div>
+  <input class="form-control" id="lastName" type="text" name="lastName" value="{$valid->userInput('lastName')}">
+  <div class="text-danger">{$valid->error('lastName')}</div>
 </div>
 
-<div>
+<div class="form-group">
   <label for="email">Email</label>
-  <input id="email" type="text" name="email" value="{$valid->userInput('email')}">
-  <div class="text-error">{$valid->error('email')}</div>
+  <input class="form-control" id="email" type="text" name="email" value="{$valid->userInput('email')}">
+  <div class="text-danger">{$valid->error('email')}</div>
 </div>
 
-<div>
+<div class="form-group">
   <label for="message">Message</label>
-  <textarea id="message" name="message">{$valid->userInput('message')}</textarea>
-  <div class="text-error">{$valid->error('message')}</div>
+  <textarea class="form-control" id="message" name="message">{$valid->userInput('message')}</textarea>
+  <div class="text-danger">{$valid->error('message')}</div>
 </div>
 
-<div>
-  <input type="submit" value="Send">
+<div class="form-group">
+  <input class="btn btn-primary" type="submit" value="Send">
 </div>
 
 </form>

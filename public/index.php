@@ -1,4 +1,10 @@
 <?php
+require '../core/bootstrap.php';
+
+$_SESSION=[];
+//$_SESSION['user']= [];
+//$_SESSION['user']['id']=12345;
+
 // add meta tags
 $meta=[];
 $meta['title'] = "MBMeftahi";
@@ -11,8 +17,7 @@ $content =<<<EOT
       <p> I am system engineer; curently attending full stack training at Microtrain  to extend my coding capability. I would like to be able to develop websites and api's  and websites to comunicate with user community and created utilities and tools to automate back end activities of system admins.</p>
     </main>
     <section>
-      <a href="https://localhost/apod-vanilla/index.html" >Vanilla NASA </a>
-      <iframe src="https://localhost/apod-vanilla/index.html" width="1080" height="660"></iframe>
+      <iframe src="https://localhost/apod-vanilla/index.html" width="1080px" height="600px" fullscreen="true" ></iframe>
     </section>
 EOT;
 require '../core/layout.php';

@@ -31,6 +31,39 @@ class Validate{
 
     }
 
+    /**
+     * Check and retund strong if the passowrd has the lenght, 
+     * also chack if numbers, letters and special
+     * charactors exist.
+     */
+    public function strength($value) {
+        $strong=0;
+        if (strlen($value) >= 8) {
+            $strong++;
+        }
+        if (preg_match("([\W]{1,})", $value)) {
+            $strong++;
+        }
+        if (preg_match("([0-9]{1,})", $value)) {
+            $strong++;
+        }
+        if (preg_match("([a-z]{1,})", $value)) {
+            $strong++;
+        }
+        if (preg_match("([A_Z]{1,})", $value)) {
+            $strong++;
+        }
+        return $strong===5?true:false;
+    }
+
+    function matchPassword($value){
+        if($this->data['password'] === $value){
+            return true;
+        }
+        return false;
+    }
+
+
     public function check($data){
 
         $this->data = $data;
@@ -71,5 +104,6 @@ class Validate{
     public function userInput($key){
         return (!empty($this->data[$key])?$this->data[$key]:null);
     }
+
 }
 

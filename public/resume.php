@@ -1,4 +1,5 @@
 <?php
+require '../core/bootstrap.php';
 // add meta tags
 $meta=[];
 $meta['title'] = "Resume ";
