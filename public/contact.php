@@ -1,5 +1,5 @@
 <?php
-require '../core/bootstrap.php';
+require '../bootstrap.php';
 
 
 // form processing requirement

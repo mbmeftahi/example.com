@@ -1,5 +1,5 @@
 <?php
-require '../../core/bootstrap.php';
+require '../../bootstrap.php';
 require '../../core/db_connect.php';
 
 checkSession();

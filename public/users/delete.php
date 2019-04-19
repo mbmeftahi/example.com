@@ -1,5 +1,5 @@
 <?php
-require '../../core/bootstrap.php';
+require '../../bootstrap.php';
 include '../../core/db_connect.php';
 $args = [
     'id'=>FILTER_SANITIZE_STRING

@@ -1,5 +1,5 @@
 <?php
-require '../core/bootstrap.php';
+require '../bootstrap.php';
 
 $_SESSION=[];
 header('LOCATION: /');
